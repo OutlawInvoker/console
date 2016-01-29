@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({
 // Use the passport package in our application
 app.use(passport.initialize());
 
-app.use('/admin', express.static(__dirname + '/client'));
+app.use('/admin', express.static(__dirname + '/../client'));
 
 // Create our Express router
 var router = express.Router();
