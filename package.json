@@ -2,7 +2,7 @@
   "name": "admin-test",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server/index.js"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
