@@ -1,0 +1,32 @@
+﻿<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="min-height: 540px !important;">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Dashboard
+      <small>Apps &amp; Services</small>
+    </h1>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+    <!-- Your Page Content Here -->
+    <div class="row">
+      <section class="col-md-3" ng-repeat="app in vm.apps track by $index">
+        <div class="box box-solid box-{{app.classCol}}">
+          <div class="box-header with-border">
+            <h3 class="box-title">
+              <a ng-href="#/apps/{{app._id}}" class="text-{{app.classCol}}">{{app.name}}</a>
+            </h3>
+          </div><!-- /.box-header -->
+          <div class="box-body">
+            <strong>{{app.services.length}} Services</strong>
+            <p class="wrap-text">{{app.description}}</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </section><!-- /.content -->
+</div><!-- /.content-wrapper -->

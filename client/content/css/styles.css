@@ -1,0 +1,18 @@
+.default-body {
+  background-color: #CCC; 
+  height: 100%;
+}
+.content-wrapper {
+  height: 100% !important;
+}
+.table td:last-child a{
+  margin-right: 10px;
+}
+textarea { 
+  resize: vertical; 
+}
+.wrap-text{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

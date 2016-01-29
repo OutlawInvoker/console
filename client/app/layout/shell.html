@@ -1,0 +1,11 @@
+﻿<div data-ng-controller="Shell as vm">
+  <header ng-hide="hideHeadAndFoot">
+    <div data-ng-include="'app/layout/topnav.html'"></div>
+  </header>
+  <section>
+    <div data-ng-view></div>
+  </section>
+  <footer ng-hide="hideHeadAndFoot">
+    <div data-ng-include="'app/layout/footer.html'"></div>
+  </footer>
+</div>

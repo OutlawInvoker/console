@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html data-ng-app="app" ng-strict-di>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <title data-ng-bind="title"></title>
+  <link href="content/css/styles.css" rel="stylesheet">
+  <link href="content/css/bootstrap.css" rel="stylesheet" />
+  <link href="content/css/toastr.css" rel="stylesheet" />
+  <link href="content/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href="content/css/AdminLTE.css" rel="stylesheet" />
+  <link rel="stylesheet" href="content/css/skins/skin-blue.min.css">
+  <link rel="stylesheet" href="content/css/ionicons.min.css">
+</head>
+
+  <!-- Body -->
+  <body class="hold-transition skin-blue {{bodyClass}} default-body">
+    <div class="wrapper" ng-show="!hideHeadAndFoot">
+      <div>
+        <div data-ng-include="'app/layout/shell.html'"></div>
+      </div>      
+    </div><!-- /.wrapper -->
+    <div ng-show="hideHeadAndFoot">
+      <div data-ng-include="'app/layout/shell.html'"></div>
+    </div>
+
+
+
+  <!-- vendor js -->
+  <script src="vendor/jquery.js"></script>
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular/angular-route.js"></script>
+  <script src="vendor/angular/angular-sanitize.js"></script>
+  <script src="vendor/angular/angular-animate.js"></script>
+  <script src="vendor/bootstrap.js"></script>
+  <script src="vendor/toastr.js"></script>
+  <script src="vendor/moment.js"></script>
+  <!-- vendor js -->
+
+  <!-- Bootstrapping -->
+  <script src="app/app.module.js"></script>
+
+  <!-- Reusable Blocks/Modules -->
+  <script src="app/blocks/exception/exception.module.js"></script>
+  <script src="app/blocks/exception/exception-handler.provider.js"></script>
+  <script src="app/blocks/exception/exception.js"></script>
+  <script src="app/blocks/logger/logger.module.js"></script>
+  <script src="app/blocks/logger/logger.js"></script>
+  <script src="app/blocks/router/router.module.js"></script>
+  <script src="app/blocks/router/routehelper.js"></script>
+
+  <!-- core module -->
+  <script src="app/core/core.module.js"></script>
+  <script src="app/core/constants.js"></script>
+  <script src="app/core/config.js"></script>
+  <script src="app/core/dataservice.js"></script>
+
+  <!-- layout -->
+  <script src="app/layout/layout.module.js"></script>
+  <script src="app/layout/shell.js"></script>
+
+  <!-- Dashboard -->
+  <script src="app/dashboard/dashboard.module.js"></script>
+  <script src="app/dashboard/config.route.js"></script>
+  <script src="app/dashboard/dashboard.js"></script>
+
+  <!-- Apps -->
+  <script src="app/apps/apps.module.js"></script>
+  <script src="app/apps/config.route.js"></script>
+  <script src="app/apps/apps.js"></script>
+  <script src="app/apps/create.js"></script>
+  <script src="app/apps/edit.js"></script>
+
+  <!-- Services -->
+  <script src="app/services/services.module.js"></script>
+  <script src="app/services/config.route.js"></script>
+  <script src="app/services/services.js"></script>  
+  <script src="app/services/create.js"></script>
+  <script src="app/services/edit.js"></script>
+
+  <!-- App Service -->
+  <script src="app/appservices/appservices.module.js"></script>
+  <script src="app/appservices/config.route.js"></script>
+  <script src="app/appservices/appservices.js"></script>
+
+  <!-- Profile -->
+  <script src="app/profile/profile.module.js"></script>
+  <script src="app/profile/config.route.js"></script>
+  <script src="app/profile/profile.js"></script>
+
+  <!-- Login -->
+  <script src="app/authentication/auth.module.js"></script>
+  <script src="app/authentication/config.route.js"></script>
+  <script src="app/authentication/login.js"></script>
+  <script src="app/authentication/signup.js"></script>
+
+  <!-- Theme - Always load last -->
+  <script src="vendor/adminlte.js"></script>
+
+</body>
+</html>
